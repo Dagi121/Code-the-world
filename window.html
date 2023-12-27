@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Window</h2>
+
+<p id="demo"></p>
+
+
+<h3>The window.location object</h3>
+
+<input type="button" value="Load new document" onclick="newDoc()">
+
+
+<script>
+    function newDoc() {
+  window.location.assign("https://www.w3schools.com")
+}
+document.getElementById("demo").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px<br>" +
+"The full URL of this page is:<br>" + window.location.href + "<br>" +
+"Page hostname is " + window.location.hostname + "dagim<br>" + 
+"The page protocol is: " + window.location.protocol + "<br>" +
+"Page path is " + window.location.pathname + "<br>" +
+"Port number is " + window.location.port;
+</script>
+
+</body>
+</html>
